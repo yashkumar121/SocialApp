@@ -118,28 +118,23 @@ public class HomePageFragment extends Fragment
             }
         });
 
-        DatabaseReference reference;
-        if(mParam1.equalsIgnoreCase("home"))
-            reference=mFirebaseDatabase.getReference().child("Post");
-        else
-            reference=mFirebaseDatabase.getReference()
-                    .child(prefernce.getString(AppPrefernce.TOKENKEY))
-                    .child("Post");
 
 
         posts=new ArrayList<>();
-        adapter=new PostAdapter(getActivity(),posts,reference);
+        adapter=new PostAdapter(getActivity(),posts);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(adapter);
 
 
-        addNewPostListener(reference);
+        addNewPostListener(prefernce);
 
     }
 
-    private void addNewPostListener(DatabaseReference reference)
+    private void addNewPostListener(AppPrefernce prefernce)
     {
+        DatabaseReference reference=mFirebaseDatabase.getReference().child("Post");
 
+        final String currentUserId=prefernce.getString(AppPrefernce.TOKENKEY);
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -153,6 +148,9 @@ public class HomePageFragment extends Fragment
                     DataSnapshot snapshot=postList.next();
                     Post post=snapshot.getValue(Post.class);
                     post.setReference(snapshot.getKey());
+
+                    if(mParam1.equalsIgnoreCase("myProfile") && !post.getEmailId().equalsIgnoreCase(currentUserId))
+                        continue;
                     posts.add(0,post);
                 }
                 adapter.setList(posts);
@@ -181,15 +179,8 @@ public class HomePageFragment extends Fragment
             post.setTimeStamp(System.currentTimeMillis());
             post.setNoOfLikes(0);
             post.setUserName(prefernce.getString(AppPrefernce.USERNAME));
-            post.setEmailId(prefernce.getString(AppPrefernce.EMAILID));
+            post.setEmailId(prefernce.getString(AppPrefernce.TOKENKEY));
             post.setProfileDp(prefernce.getString(AppPrefernce.PROFILEDP));
-
-
-            mFirebaseDatabase.getReference()
-                    .child(prefernce.getString(AppPrefernce.TOKENKEY))
-                    .child("Post")
-                    .child(mFirebaseDatabase.getReference().push().getKey())
-                    .setValue(post);
 
             mFirebaseDatabase.getReference()
                     .child("Post")

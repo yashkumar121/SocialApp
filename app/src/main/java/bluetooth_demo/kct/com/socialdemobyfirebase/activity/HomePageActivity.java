@@ -44,8 +44,10 @@ public class HomePageActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager)
     {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(HomePageFragment.newInstance("myProfile"), "My Profile");
+
         adapter.addFragment(HomePageFragment.newInstance("home"), "Home");
+        adapter.addFragment(HomePageFragment.newInstance("myProfile"), "My Profile");
+
         viewPager.setAdapter(adapter);
     }
 

@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -24,10 +25,10 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     Context context;
     ArrayList<Post> postArrayList;
     DatabaseReference reference;
-    public PostAdapter(Context context, ArrayList<Post> postArrayList,DatabaseReference reference) {
+    public PostAdapter(Context context, ArrayList<Post> postArrayList) {
         this.context = context;
         this.postArrayList = postArrayList;
-        this.reference=reference;
+        this.reference= FirebaseDatabase.getInstance().getReference().child("Post");
     }
 
     @NonNull
