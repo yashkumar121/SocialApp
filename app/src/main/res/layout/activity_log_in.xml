@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LogInActivity"
+    android:background="@drawable/login_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/title">
+
+        <EditText
+            android:layout_width="@dimen/dp330"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginBottom="@dimen/dp20"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/dp14"
+            android:hint="@string/hintemail"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:textSize="@dimen/sp14"/>
+        <EditText
+            android:layout_width="@dimen/dp330"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginBottom="@dimen/dp20"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center_vertical|left"
+            android:hint="@string/hintpassword"
+            android:paddingLeft="@dimen/dp14"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:textSize="@dimen/sp14"/>
+        <TextView
+            android:layout_width="@dimen/dp340"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/button_bg"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:id="@+id/buttonlogin"/>
+
+    </LinearLayout>
+    <bluetooth_demo.kct.com.socialdemobyfirebase.util.AVLoadingIndicatorView
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        app:indicatorColor="@color/white"
+        app:indicatorName="BallPulseIndicator"
+        android:visibility="gone"/>
+
+</RelativeLayout>

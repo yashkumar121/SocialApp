@@ -1,0 +1,161 @@
+{
+  "project_info": {
+    "project_number": "1088173882646",
+    "firebase_url": "https://fir-babda.firebaseio.com",
+    "project_id": "fir-babda",
+    "storage_bucket": "fir-babda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088173882646:android:d5434c31a5236cd0",
+        "android_client_info": {
+          "package_name": "app.healthyfoodforweightloss.healthyrecipes.org.android.top.mevo.choco.mig.com.appindexingtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088173882646-9e5og3ulg8ioeoskae0q85200eum99v9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.healthyfoodforweightloss.healthyrecipes.org.android.top.mevo.choco.mig.com.appindexingtest",
+            "certificate_hash": "a28b26854d6dec2332db0af184c36446efe87cb5"
+          }
+        },
+        {
+          "client_id": "1088173882646-77rutd7f2pntoao33eua1m4uf204jvv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZcUjJffzNiBgx53k_sd4GVZQw7QtELdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088173882646-77rutd7f2pntoao33eua1m4uf204jvv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088173882646:android:c3d59a638cad3782",
+        "android_client_info": {
+          "package_name": "bluetooth_demo.kct.com.socialdemobyfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088173882646-77rutd7f2pntoao33eua1m4uf204jvv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZcUjJffzNiBgx53k_sd4GVZQw7QtELdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088173882646:android:bd3a2367077007a2",
+        "android_client_info": {
+          "package_name": "com.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088173882646-77rutd7f2pntoao33eua1m4uf204jvv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZcUjJffzNiBgx53k_sd4GVZQw7QtELdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088173882646:android:f6089fb571fa242a",
+        "android_client_info": {
+          "package_name": "com.mig.choco.mevo.top.android.org.healthyrecipes.healthyfoodforweightloss.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088173882646-rshhahiup0gdvpsm5rf8iejtpq9tmsjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mig.choco.mevo.top.android.org.healthyrecipes.healthyfoodforweightloss.app",
+            "certificate_hash": "a28b26854d6dec2332db0af184c36446efe87cb5"
+          }
+        },
+        {
+          "client_id": "1088173882646-77rutd7f2pntoao33eua1m4uf204jvv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZcUjJffzNiBgx53k_sd4GVZQw7QtELdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088173882646-77rutd7f2pntoao33eua1m4uf204jvv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

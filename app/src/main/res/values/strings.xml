@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Social Demo By FireBase</string>
+    <string name="hintemail">Email</string>
+    <string name="hintpassword">Password</string>
+    <string name="hintpost">Tell your friends where you upto.</string>
+    <string name="login">Login</string>
+
+    <string name="like">Like</string>
+    <string name="share">Share</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

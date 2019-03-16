@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3faeb6</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="colorloginstart">#2bd4d1</color>
+    <color name="colorloginend">#044fab</color>
+
+    <color name="colorstatusBar">#044596</color>
+
+    <color name="tabtextcolor">#aab0b7</color>
+
+    <color name="tabbgcolor">#fefefe</color>
+    <color name="textcolr">#535151</color>
+</resources>
